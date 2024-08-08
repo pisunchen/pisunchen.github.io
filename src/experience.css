@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    width: 30%;
+    color: black;
+  }
+  
+  .sidebar-item {
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .sidebar-item.active {
+    border-color: black;
+    border-style: solid;
+  }
+  
+  .content {
+    width: 70%;
+    color: black;
+    padding-left: 20px;
+  }
+  
+  .details-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+#experience {
+    background-color: rgb(229, 244, 248);
+}

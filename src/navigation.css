@@ -5,6 +5,13 @@
     padding: 1.5em 0 0 0;
 }
 
+.resume-link {
+    border-color: black;
+    border-radius: 4px;
+    padding: 0.1em;
+    border-style: solid;
+}
+
 .nav > div {
     display: inline-block;
     font-size: 18px;
