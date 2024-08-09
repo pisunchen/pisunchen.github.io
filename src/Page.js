@@ -4,7 +4,6 @@ import About from './About';
 import Experience from './Experience';
 import Contact from './Contact'
 import Projects from './Projects'
-import ProjectCard from './ProjectCard';
 
 function Page() {
   return (

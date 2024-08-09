@@ -1,3 +1,4 @@
+import React from 'react';
 import pisunPhoto from './images/profile.png';
 
 function About() {
