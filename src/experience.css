@@ -4,12 +4,14 @@
   }
   
   .sidebar {
-    width: 30%;
+    width: 80%;
     color: black;
   }
   
   .sidebar-item {
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
     cursor: pointer;
   }
   
@@ -21,14 +23,14 @@
   .content {
     width: 70%;
     color: black;
-    padding-left: 20px;
+    padding-left: 10px;
   }
   
   .details-list {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 0px;
   }
   
 #experience {
-    background-color: rgb(229, 244, 248);
+    background-color: rgb(250, 249, 246);
 }

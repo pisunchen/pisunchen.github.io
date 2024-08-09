@@ -8,7 +8,7 @@ function About() {
                     <span className="highlight">Hello!</span>
                     </div>
                         <p>
-                            My name is Pisun, and I am a recent graduate from the University of British Columbia with a degree in Computer Science and Business. I'm excited about pursuing a career that lets me work on innovative projects with great people.
+                            My name is Pisun, and I recently graduated from the <strong>University of British Columbia</strong> with a degree in Computer Science and Business. I'm excited about pursuing a career that lets me work on innovative projects with great people.
                             <br></br>
                             <br></br>
                             I’m passionate about being open-minded and embracing new challenges and opportunities. Recently, my internships allowed me to explore various roles in both tech and business, enhancing my problem-solving and adaptability skills.

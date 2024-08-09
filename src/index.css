@@ -39,6 +39,7 @@ p {
 
 .titles {
   font-size: 50px;
+  font-family: 'Fira Sans', sans-serif;
   background-image: linear-gradient(120deg, rgba(195, 219, 228, 1.0) 0%, rgba(255, 251, 200, 1.0) 75%, rgba(225, 175, 153, 1.0) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
@@ -60,7 +61,7 @@ p {
   grid-auto-rows: minmax(100px, auto);
   justify-items: center;
   align-items: center;
-  padding: 0 10em;
+  padding: 0 15em;
   height: 100vh;
 }
 
@@ -87,4 +88,137 @@ p {
   .highlight {
       font-size: 1.5em;
   }
+}
+
+.icon-container {
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.icon {
+  width: 50px; /* Set the width of the icons */
+  height: 50px; /* Set the height of the icons */
+  object-fit: contain; /* Ensure icons maintain their aspect ratio */
+}
+
+.icon-container a:hover .icon {
+  opacity: 0.8; /* Slightly fade the icons on hover */
+}
+
+
+/* collapsible */
+
+.collapsible {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0em 2em;
+  height: 5vh;
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.contents {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#projects {
+  height: 100vh;
+  display: flex;
+  font-family: "Syne Mono";
+  flex-direction: column;
+  padding: 0 15em;
+  height: 100vh;
+}
+
+.accordion-menu {
+	display: inline;
+}
+
+
+/* PROJECTS */
+
+.container-projects-outer {
+  margin: 0 auto;
+  padding: 0 20em;
+  text-align: left;
+}
+
+.container-projects {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 10px; /* Space between the boxes */
+  justify-content: space-between; /* Distribute space between items */
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.project-card {
+  background-color: #1c1c1e; /* Dark background */
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  max-width: 400px;
+  flex-basis: calc(50% - 10px);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.logo-image {
+  width: 50px; /* Set the width of the icons */
+  height: 30px; /* Set the height of the icons */
+  object-fit: contain; /* Ensure icons maintain their aspect ratio */
+  margin-right: 10px;
+}
+
+.project-content {
+  padding: 16px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-tech {
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
 }
