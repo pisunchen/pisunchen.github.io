@@ -8,7 +8,7 @@ const Projects = () => {
     const projects = [
         {
             title: 'Alida Hacks 2023',
-            description: '2nd place in company Hackathon',
+        description: '2nd place in company Hackathon',
             technologies: ['JavaScript', 'React', 'Node.js', 'SQL', 'OpenAI API', 'WhisperAPI'],
             image: analytics,
             link: 'https://www.youtube.com/watch?v=ineS6dOIyhg'

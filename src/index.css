@@ -489,10 +489,8 @@ a:hover .icon {
 
 
 @media only screen and (max-width: 576px) {
-
-    .container-projects-outer,
     .container-experience {
-        margin-top: 20em;
+        margin-top: 30em;
         padding: 0 5em;
     }
 
