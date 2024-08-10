@@ -22,7 +22,7 @@ function Landing() {
   return (
       <div className="nav">
         <div className="nav-title">
-          <a href="#landing">Pisun Chen Lai</a>
+          <a>Pisun Chen Lai</a>
         </div>
         <div className="nav-links">
           <a href="#about">About</a>

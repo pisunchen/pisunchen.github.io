@@ -370,6 +370,10 @@ a:hover .icon {
         max-width: 100%;
         flex-basis: 100%;
     }
+/* 
+    #photo {
+        display: none;
+    } */
 
 }
 
@@ -480,4 +484,16 @@ a:hover .icon {
     .container>div {
         padding: 1em;
     }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .container-projects-outer,
+    .container-experience {
+        margin-top: 20em;
+        padding: 0 5em;
+    }
+
 }
