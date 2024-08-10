@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ProjectCard = ({ title, description, technologies, image }) => {
+const ProjectCard = ({ title, description, technologies, image, link }) => {
     return (
-        <div className="project-card">
+        <a href={link} className="project-card">
             <img src={image} alt={`${title} thumbnail`} className="project-image" />
             <div className="project-content">
                 <h3 className="project-title">{title}</h3>
@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, technologies, image }) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </a>
     );
 };
 

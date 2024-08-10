@@ -11,18 +11,21 @@ const Projects = () => {
             description: '2nd place in company Hackathon',
             technologies: ['JavaScript', 'React', 'Node.js', 'SQL', 'OpenAI API', 'WhisperAPI'],
             image: analytics,
+            link: 'https://www.youtube.com/watch?v=ineS6dOIyhg'
         },
         {
             title: 'Fast Fingers',
             description: 'Side Project | Typing Speed Test Web App',
             technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
             image: fastTypingImg,
+            link: 'https://pisunchen.github.io/typing_game/'
         },
         {
             title: 'onStorage',
             description: 'Side Project | Storage Company Database',
             technologies: ['SQL', 'Java', 'Oracle DBMS', 'Swing'],
             image: er_diagram,
+            link: 'https://github.com/ethanyichen/Storage-Company---Database-APP'
         },
     ];
 
@@ -39,6 +42,7 @@ const Projects = () => {
                         description={project.description}
                         technologies={project.technologies}
                         image={project.image}
+                        link={project.link}
                     />
                 ))}
             </div>
