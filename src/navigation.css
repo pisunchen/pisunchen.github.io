@@ -45,3 +45,17 @@
 .nav.scrolled:hover {
     opacity: 1;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        height: 3em;
+        width: 100%;
+        padding: 1.5em 0em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom:  0px;
+    }
+}

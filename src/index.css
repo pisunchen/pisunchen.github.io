@@ -371,9 +371,6 @@ a:hover .icon {
         flex-basis: 100%;
     }
 
-    #photo {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -383,11 +380,25 @@ a:hover .icon {
         padding: 0 5em;
     }
 
+    #bio {
+        margin-top: 10em;
+    }
+
     .container {
         display: flex;
         flex-wrap: wrap;
         column-gap: 10px;
         row-gap: 10px
+    }
+
+    .project-card {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .container-projects-outer {
+        padding: 0 10em;
+        margin: 0 0em;
     }
 
     #photo img {
@@ -415,13 +426,19 @@ a:hover .icon {
     .titles {
         font-size: 36px;
     }
+
+    .icon {
+        width: 2em;
+        margin: 0em 1em;
+        object-fit: contain;
+    }
 }
 
 @media only screen and (max-width: 576px) {
 
     .container-projects-outer,
     .container-experience {
-        padding: 0 2em;
+        padding: 0 5em;
     }
 
     .heading {
@@ -444,6 +461,11 @@ a:hover .icon {
     #photo img {
         max-width: 100%;
         height: auto;
+    }
+
+    .project-card {
+        max-width: 100%;
+        flex-basis: 100%;
     }
 
     .collapsible {

@@ -20,7 +20,6 @@ function Landing() {
   }, []);
 
   return (
-    <div>
       <div className="nav">
         <div className="nav-title">
           <a href="#landing">Pisun Chen Lai</a>
@@ -31,7 +30,6 @@ function Landing() {
           <a href="#projects">Projects</a>
           <a href={resume} target="_blank" className="resume-link">Resume</a>
         </div>
-      </div>
     </div>
   );
 }
