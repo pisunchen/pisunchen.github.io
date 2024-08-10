@@ -3,7 +3,6 @@ import ProjectCard from './ProjectCard';
 import analytics from './images/analytics.png'; // Example images
 import fastTypingImg from './images/typing.png';
 import er_diagram from './images/er_diagram.png';
-import imagoImg from './images/profile.png';
 
 const Projects = () => {
     const projects = [
@@ -28,7 +27,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className='container-projects-outer'>
+        <div className='container-projects-outer' id="projects">
             <div className="heading">
                 <span className="titles">Projects</span>
             </div>

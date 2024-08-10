@@ -55,6 +55,13 @@ p {
   background-size: 100% 88%;
 }
 
+.contact-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -90,22 +97,14 @@ p {
   }
 }
 
-.icon-container {
-  align-items: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
 
 .icon {
-  width: 50px; /* Set the width of the icons */
-  height: 50px; /* Set the height of the icons */
+  width: 3em; /* Set the width of the icons */
+  margin: 0em 1em;
   object-fit: contain; /* Ensure icons maintain their aspect ratio */
 }
 
-.icon-container a:hover .icon {
+a:hover .icon {
   opacity: 0.8; /* Slightly fade the icons on hover */
 }
 
@@ -134,7 +133,6 @@ p {
 #projects {
   height: 100vh;
   display: flex;
-  font-family: "Syne Mono";
   flex-direction: column;
   padding: 0 15em;
   height: 100vh;
@@ -148,20 +146,19 @@ p {
 /* PROJECTS */
 
 .container-projects-outer {
+  margin: 0 90px;
+  padding: 0 20em;
+  text-align: left;
+  height: auto;
+  width: auto;
+}
+
+.container-experience {
   margin: 0 auto;
   padding: 0 20em;
   text-align: left;
-}
-
-.container-projects {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  gap: 10px; /* Space between the boxes */
-  justify-content: space-between; /* Distribute space between items */
-  justify-items: center;
-  align-items: center;
-  height: 100vh;
+  min-height: 40vh;
+  height: auto;
 }
 
 .project-card {
@@ -177,6 +174,17 @@ p {
   flex-basis: calc(50% - 10px);
 }
 
+.container-projects {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 5px; /* Space between the boxes */
+  justify-content: space-between; /* Distribute space between items */
+  justify-items: center;
+  align-items: center;
+  flex: 1;
+}
+
 .project-card:hover {
   transform: scale(1.05);
 }
@@ -188,9 +196,9 @@ p {
 }
 
 .logo-image {
-  width: 50px; /* Set the width of the icons */
-  height: 30px; /* Set the height of the icons */
-  object-fit: contain; /* Ensure icons maintain their aspect ratio */
+  width: 50px;
+  height: 30px;
+  object-fit: contain;
   margin-right: 10px;
 }
 
@@ -221,4 +229,67 @@ p {
   margin-bottom: 8px;
   border-radius: 4px;
   font-size: 0.875rem;
+}
+
+
+.experience-accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.accordion-item {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.accordion-item.open {
+  background-color: #f8f8f8;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.accordion-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.location {
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+.details {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f06292;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import pisunPhoto from './images/profile.png';
+import Contact from './Contact';
 
 function About() {
     return (
@@ -21,6 +22,7 @@ function About() {
             </div>
             <div id="photo">
                 <img src={pisunPhoto} alt="pisun photo" />
+                <Contact></Contact>
             </div>
         </div>
     );

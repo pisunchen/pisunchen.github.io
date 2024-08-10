@@ -5,7 +5,7 @@ import github from './images/github.png'
 
 function Contact() {
     return (
-        <div className="icon-container">
+        <div className='contact-container'>
             <a href="mailto:pisun.c.l@gmail.com">
                 <img className="icon" src={mail} alt="Mail" />
             </a>

@@ -12,7 +12,7 @@ function Page() {
       <About></About>
       <Experience></Experience>
       <Projects></Projects>
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
     </div>
   );
 }
