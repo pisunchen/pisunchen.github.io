@@ -293,6 +293,10 @@ a:hover .icon {
     margin-bottom: 5px;
 }
 
+.project-card > a {
+    text-decoration: none;
+    color: white;
+}
 
 /* Media Queries */
 
