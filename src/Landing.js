@@ -28,7 +28,7 @@ function Landing() {
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href={resume} target="_blank" className="resume-link">Resume</a>
+          <a href={resume} target="_blank" className="resume-link" rel="noopener noreferrer">Resume</a>
         </div>
     </div>
   );

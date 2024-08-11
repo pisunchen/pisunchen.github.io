@@ -2,7 +2,7 @@ import React from 'react';
 import Landing from './Landing'
 import About from './About';
 import Experience from './Experience';
-import Contact from './Contact'
+// import Contact from './Contact'
 import Projects from './Projects'
 
 function Page() {

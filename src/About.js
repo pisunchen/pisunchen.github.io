@@ -21,7 +21,7 @@ function About() {
                         </p>
             </div>
             <div id="photo">
-                <img src={pisunPhoto} alt="pisun photo" />
+                <img src={pisunPhoto} loading='lazy' alt="Pisun Chen profile photo" />
                 <Contact></Contact>
             </div>
         </div>

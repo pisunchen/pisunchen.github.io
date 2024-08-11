@@ -10,11 +10,23 @@ const ExperienceAccordion = () => {
       title: 'Software Developer @ Alida',
       location: 'Vancouver, BC, Sep 2022 - Aug 2023',
       details: [
-        'Developed new React components, implemented micro-services and backend endpoints',
-        'Enhanced customer experience by creating new endpoints leveraging LookML for dashboard duplication and retaining previous Looker infographics and calculations, improving usability and customer satisfaction',
-        'Collaborated with UX and product teams on product behavior considering technical edge cases, and contributed to Scrum sprint planning to maintain clear acceptance criteria and prevent scope creep',
+        <>
+          Developed new <strong>React components</strong>, implemented micro-services and <strong>backend endpoints</strong>, performed continuous unit and integration testing
+        </>,
+        <>
+          Spearheaded planning, breakdown, and analysis meeting for a user permission epic, defining <strong>functional requirements</strong> for a feature request from Amazon Music, resulting in enhanced user roles
+        </>,
+        <>
+          Refactored and integrated new shared date range picker component with <strong>MaterialUI</strong> and its endpoints, improving the outdated date picker’s performance by <strong>100% with optimized API calls</strong>
+        </>,
+        <>
+          Enhanced customer experience by creating new endpoints leveraging <strong>LookML</strong> for dashboard duplication and retaining previous Looker infographics and calculations, improving usability and customer satisfaction
+        </>,
+        <>
+          Collaborated with <strong>UX</strong> and <strong>product teams</strong> on product behavior considering technical edge cases, and contributed to Scrum <strong>sprint planning</strong> to maintain clear acceptance criteria and prevent scope creep
+        </>,
       ],
-      tags: ['TypeScript','React', 'Node', 'Web Development', 'MaterialUI'],
+      tags: ['TypeScript','React.js', 'Node.js', 'Koa.js', 'PostgreSQL', 'Web Development', 'MaterialUI'],
       logo: alidaLogo,
     },
     {
@@ -22,11 +34,20 @@ const ExperienceAccordion = () => {
       title: 'Software Engineer in Test Co-op @ Trulioo',
       location: 'Vancouver, BC, Jan 2022 - Aug 2022',
       details: [
-        'Contributed to automating tests for a web-based SaaS product by capturing requirements and enhancing the test automation framework',
-        'Documented project details, testing methodologies, and environment setups on Confluence and bug findings on JIRA, ensuring clear references to team members, improving work transparency and timely resolution of issues',
-        'Engaged in regression testing on biweekly software releases, ensuring software met quality standards',
+        <>
+          Contributed to automating tests for a web-based SaaS product by capturing requirements and enhancing the <strong>test automation framework</strong>
+        </>,
+        <>
+          Led the automation testing for internationalized hosted document verification, enabling <strong>localization verification</strong> for 12 languages, validating results to display correct information
+        </>,
+        <>
+          Documented project details, testing methodologies, and environment setups on <strong>Confluence</strong> and bug findings on <strong>JIRA</strong>, ensuring clear references to team members, improving work transparency and timely resolution of issues
+        </>,
+        <>
+          Engaged in <strong>regression testing</strong> on biweekly software releases, ensuring software met quality standards
+        </>,
       ],
-      tags: ['TypeScript','Jest', 'Mocha', 'TestRail'],
+      tags: ['TypeScript', 'C#', 'Jest', 'Mocha', 'Chai'],
       logo: truliooLogo
     },
   ];
