@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import './navigation.css';
+import './index.css';
 import resume from './resume/Pisun_Chen_Lai_Resume.pdf';
 
 function Landing() {
   useEffect(() => {
     const handleScroll = () => {
       const nav = document.querySelector('.nav');
-      if (window.scrollY > 0) {
+      if (window.scrollY > 9) {
         nav.classList.add('scrolled');
       } else {
         nav.classList.remove('scrolled');
