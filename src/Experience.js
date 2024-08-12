@@ -55,7 +55,7 @@ const ExperienceAccordion = () => {
   return (
     <div className='container-experience' id="experience">
       <div className="heading">
-        <span className="titles">Experience</span>
+        <span className="highlight">Experience</span>
       </div>
       <div className="experience-accordion">
         {experiences.map((experience, index) => (

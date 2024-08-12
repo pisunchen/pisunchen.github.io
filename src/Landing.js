@@ -1,37 +1,16 @@
-import React, { useEffect } from 'react';
-import './index.css';
-import resume from './resume/Pisun_Chen_Lai_Resume.pdf';
+import React from 'react';
+import pisunPhoto from './images/profile.png';
+import RotatingWords from './RotatingWords';
 
 function Landing() {
-  useEffect(() => {
-    const handleScroll = () => {
-      const nav = document.querySelector('.nav');
-      if (window.scrollY > 9) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-      <div className="nav">
-        <div className="nav-title">
-          <a>Pisun Chen Lai</a>
+    return (
+        <div className="container-landing" id="landing">
+            {/* <div className="heading">
+                <span className="highlight">Hello World!</span>
+            </div> */}
+            <RotatingWords></RotatingWords>
         </div>
-        <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href={resume} target="_blank" className="resume-link" rel="noopener noreferrer">Resume</a>
-        </div>
-    </div>
-  );
+    );
 }
 
 export default Landing;

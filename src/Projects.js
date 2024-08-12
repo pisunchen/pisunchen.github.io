@@ -32,7 +32,7 @@ const Projects = () => {
     return (
         <div className='container-projects-outer' id="projects">
             <div className="heading">
-                <span className="titles">Projects</span>
+                <span className="highlight">Projects</span>
             </div>
             <div className="container-projects">
                 {projects.map((project, index) => (

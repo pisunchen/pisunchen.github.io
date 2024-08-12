@@ -10,13 +10,13 @@ function About() {
                     <span className="highlight">Hello!</span>
                     </div>
                         <p>
-                            My name is Pisun, and I recently graduated from the <strong>University of British Columbia</strong> with a degree in Computer Science and Business. I'm excited about pursuing a career that allows me to work on innovative projects with great people.
+                            I recently graduated from the <strong>University of British Columbia</strong> with a degree in Computer Science and Business. I'm excited about pursuing a career that allows me to work on innovative projects with great people.
                             <br></br>
                             <br></br>
                             I’m passionate about being open-minded and embracing new challenges and opportunities. Recently, my internships allowed me to explore various roles in both tech and business, enhancing my problem-solving and adaptability skills.
                             <br></br>
                             <br></br>
-                            Outside of work, I enjoy biking, hiking, lifting weights, and trying out new restaurants around the city.
+                            If you see me outside, I'm most likely biking, hiking, lifting weights, or trying out new restaurants around the city.
                             <br /><br />
                         </p>
             </div>

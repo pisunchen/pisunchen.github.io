@@ -14,9 +14,148 @@ body {
 
 p {
     display: inline-block;
+    font-size: 20px;
     vertical-align: top;
     margin: 0;
 }
+
+/* ANIMATION LANDING */
+
+.container-landing {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 35em 15em;
+}
+
+.container-rotating {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 45px
+}
+.word {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.letter {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.letter.out {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.letter.behind {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.letter.in {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.rotating-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    transform: translateX(-80px);
+  }
+
+  .rotating-text p {
+    display: inline-flex;
+    margin: 0;
+    font-size: 50px;
+    vertical-align: top;
+  }
+  .rotating-text p .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+  }
+  .rotating-text p .word .letter {
+    transform-origin: center center 25px;
+  }
+  .rotating-text p .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  }
+  .rotating-text p .word .letter.in {
+    transition: 0.38s ease;
+  }
+  .rotating-text p .word .letter.behind {
+    transform: rotateX(-90deg);
+  }
+
+  .rotating-text span {
+    font-size: 50px;
+  }
+  
+  .w-1 {
+    color: #854943;
+  }
+  
+  .w-2 {
+    color: #743590;
+  }
+  
+  .w-3 {
+    color: #3498db;
+  }
+  
+  .w-4 {
+    color: #2ecc71;
+  }
+  
+  .w-5 {
+    color: #f1c40f;
+  }
+
+  .w-5 {
+    color: #1ed4bc;
+  }
+
+@keyframes animation {
+    0%,
+    100% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    25% {
+        top: -50px;
+    }
+    45% {
+        top: -50px;
+    }
+    50% {
+        top: -100px;
+    }
+    70% {
+        top: -100px;
+    }
+    75% {
+        top: -150px;
+    }
+    95% {
+        top: -150px;
+    }
+}
+
+/* END ANIMATION LANDING */
 
 /* END GENERAL */
 
@@ -153,6 +292,7 @@ a:hover .icon {
     height: auto;
     display: flex;
     flex-direction: column;
+    padding: 10em;
 }
 
 .titles {
@@ -230,7 +370,7 @@ a:hover .icon {
 }
 
 .tag {
-    background-color: #f06292;
+    background-color: #9c77d8;
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 15px;
@@ -250,7 +390,7 @@ a:hover .icon {
     width: auto;
     display: flex;
     flex-direction: column;
-    padding: 0em 10em;
+    padding: 20em 10em;
 }
 
 .project-card {
@@ -273,7 +413,6 @@ a:hover .icon {
     gap: 10px;
     justify-content: center;
     justify-items: center;
-    align-items: center;
     flex: 1;
 }
 
@@ -353,15 +492,12 @@ a:hover .icon {
     display: inline;
 }
 
-
-
 /* Media Queries */
-
 
 @media only screen and (max-width: 1200px) {
     .container {
         grid-template-columns: 1fr;
-        padding: 0 5em;
+        padding: 8em 15em;
     }
 
     img {
@@ -403,33 +539,12 @@ a:hover .icon {
     }
 }
 
-@media only screen and (max-width: 1400px) {
-
-    .container {
-        grid-template-columns: 1fr;
-        padding: 0 5em;
-    }
-
-    .container>div {
-        padding: 2em;
-    }
-
-    .container-projects-outer {
-        padding: 0 10em;
-    }
-
-    .container-experience {
-        padding: 0 10em;
-    }
-
-}
-
 
 @media only screen and (max-width: 992px) {
 
     .container {
         grid-template-columns: 1fr;
-        padding: 0 5em;
+        padding: 5em 5em;
     }
 
     .container>div {
@@ -456,6 +571,7 @@ a:hover .icon {
     .container-projects-outer,
     .container-experience {
         padding: 0 5em;
+
     }
 
     #bio {
@@ -467,7 +583,9 @@ a:hover .icon {
         display: flex;
         flex-wrap: wrap;
         column-gap: 10px;
-        row-gap: 10px
+        row-gap: 10px;
+        padding: 0 5em;
+
     }
 
     .project-card {
@@ -551,21 +669,18 @@ a:hover .icon {
         padding: 0em 1em;
         height: auto;
     }
+    .nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .container {
-        padding: 0 1em;
+        padding: 0 5em;
     }
+
 
     .container>div {
         padding: 1em;
-    }
-}
-
-
-
-@media only screen and (max-width: 576px) {
-    .container-experience {
-        margin-top: 300px;
-        padding: 0 5em;
     }
 }
