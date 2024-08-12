@@ -641,7 +641,11 @@ a:hover .icon {
     
     .container-projects-outer,
     .container-experience {
-        padding: 0 5em;
+        padding: 0 1em;
+    }
+
+    #projects {
+        padding: 0 1em;
     }
 
 
@@ -650,7 +654,7 @@ a:hover .icon {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 20em 5em;
+        padding: 20em 9em;
     }
     
     .container-rotating {
@@ -664,11 +668,11 @@ a:hover .icon {
     .rotating-text p {
         display: inline-flex;
         margin: 0;
-        font-size: 30px;
+        font-size: 24px;
         vertical-align: top;
       }
       .rotating-text span {
-        font-size: 30px;
+        font-size: 27px;
       }
     
 
@@ -709,8 +713,14 @@ a:hover .icon {
         flex-direction: column;
     }
 
+    .nav > div {
+        display: inline-block;
+        font-size: 15px;
+        padding: 0px 2em;
+    }
+
     .container {
-        padding: 0 5em;
+        padding: 0 2em;
     }
 
     p {

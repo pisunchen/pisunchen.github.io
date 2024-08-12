@@ -52,7 +52,8 @@ const RotatingWords = () => {
 
     return (
         <div className="rotating-text">
-        <p>Hello, I'm Pisun</p>
+        <p>Hello,</p>
+        <p>I'm Pisun</p>
         <p>
             <span className="word w-2">A software developer</span>
             <span className="word w-3">A coffee enthusiast</span>

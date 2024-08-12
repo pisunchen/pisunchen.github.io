@@ -7,7 +7,7 @@ const ExperienceAccordion = () => {
   const experiences = [
     {
       company: 'Alida',
-      title: 'Software Developer @ Alida',
+      title: 'Software Developer Co-op @ Alida',
       location: 'Vancouver, BC, Sep 2022 - Aug 2023',
       details: [
         <>
