@@ -40,6 +40,7 @@ p {
 h1 {
     font-size: 45px
 }
+
 .word {
     position: absolute;
     opacity: 0;
@@ -72,84 +73,97 @@ h1 {
     flex-direction: column;
     font-weight: 600;
     transform: translateX(-80px);
-  }
+}
 
-  .rotating-text p {
+.rotating-text p {
     display: inline-flex;
     margin: 0;
     font-size: 50px;
     vertical-align: top;
-  }
-  .rotating-text p .word {
+}
+
+.rotating-text p .word {
     position: absolute;
     display: flex;
     opacity: 0;
-  }
-  .rotating-text p .word .letter {
+}
+
+.rotating-text p .word .letter {
     transform-origin: center center 25px;
-  }
-  .rotating-text p .word .letter.out {
+}
+
+.rotating-text p .word .letter.out {
     transform: rotateX(90deg);
     transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
-  }
-  .rotating-text p .word .letter.in {
+}
+
+.rotating-text p .word .letter.in {
     transition: 0.38s ease;
-  }
-  .rotating-text p .word .letter.behind {
+}
+
+.rotating-text p .word .letter.behind {
     transform: rotateX(-90deg);
-  }
+}
 
-  .rotating-text span {
+.rotating-text span {
     font-size: 50px;
-  }
-  
-  .w-1 {
-    color: #854943;
-  }
-  
-  .w-2 {
-    color: #743590;
-  }
-  
-  .w-3 {
-    color: #3498db;
-  }
-  
-  .w-4 {
-    color: #2ecc71;
-  }
-  
-  .w-5 {
-    color: #f1c40f;
-  }
+}
 
-  .w-5 {
+.w-1 {
+    color: #854943;
+}
+
+.w-2 {
+    color: #743590;
+}
+
+.w-3 {
+    color: #3498db;
+}
+
+.w-4 {
+    color: #2ecc71;
+}
+
+.w-5 {
+    color: #f1c40f;
+}
+
+.w-5 {
     color: #1ed4bc;
-  }
+}
 
 @keyframes animation {
+
     0%,
     100% {
         top: 0;
     }
+
     20% {
         top: 0;
     }
+
     25% {
         top: -50px;
     }
+
     45% {
         top: -50px;
     }
+
     50% {
         top: -100px;
     }
+
     70% {
         top: -100px;
     }
+
     75% {
         top: -150px;
     }
+
     95% {
         top: -150px;
     }
@@ -175,17 +189,17 @@ h1 {
     border-style: solid;
 }
 
-.nav > div {
+.nav>div {
     display: inline-block;
     font-size: 18px;
     padding: 0px 2em;
 }
 
-.nav > .nav-links {
+.nav>.nav-links {
     float: right;
 }
 
-.nav > div > a {
+.nav>div>a {
     color: black;
     text-decoration: none;
     margin: 0 1em;
@@ -196,7 +210,7 @@ h1 {
     transition: 0.25s ease-in-out;
 }
 
-.nav > div > a:hover {
+.nav>div>a:hover {
     background-size: 100% 95%;
 }
 
@@ -463,7 +477,7 @@ a:hover .icon {
 }
 
 
-.project-card > a {
+.project-card>a {
     text-decoration: none;
     color: white;
 }
@@ -506,6 +520,7 @@ a:hover .icon {
         flex-direction: column;
         align-items: center;
     }
+
     img {
         max-width: 90vw;
         max-height: 90vh;
@@ -638,7 +653,7 @@ a:hover .icon {
 }
 
 @media only screen and (max-width: 576px) {
-    
+
     .container-projects-outer,
     .container-experience {
         padding: 0 1em;
@@ -656,7 +671,7 @@ a:hover .icon {
         align-items: center;
         padding: 20em 9em;
     }
-    
+
     .container-rotating {
         height: 100vh;
         display: flex;
@@ -670,11 +685,12 @@ a:hover .icon {
         margin: 0;
         font-size: 24px;
         vertical-align: top;
-      }
-      .rotating-text span {
+    }
+
+    .rotating-text span {
         font-size: 27px;
-      }
-    
+    }
+
 
     .heading {
         font-size: 30px;
@@ -707,13 +723,14 @@ a:hover .icon {
         padding: 0em 1em;
         height: auto;
     }
+
     .nav {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    .nav > div {
+    .nav>div {
         display: inline-block;
         font-size: 15px;
         padding: 0px 2em;

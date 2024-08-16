@@ -10,13 +10,13 @@ function About() {
                     <span className="highlight">Hello!</span>
                     </div>
                         <p>
-                            I recently graduated from the <strong>University of British Columbia</strong> with a degree in Computer Science and Business. I'm excited about pursuing a career that allows me to work on innovative projects with great people.
+                            I graduated from the <strong>University of British Columbia</strong> with a Bachelors of Commerce with a combined major in Computer Science and Business. I'm passionate about a career that involves working on innovative projects that bring talented people together to create meaningful impact.
                             <br></br>
                             <br></br>
-                            I’m passionate about being open-minded and embracing new challenges and opportunities. Recently, my internships allowed me to explore various roles in both tech and business, enhancing my problem-solving and adaptability skills.
+                            I’m all about being open-minded and embracing new challenges and opportunities. My internships have given me the chance to explore diverse roles across tech and business, enhancing my problem-solving skills and adaptability.
                             <br></br>
                             <br></br>
-                            If you see me outside, I'm most likely biking, hiking, lifting weights, or trying out new restaurants around the city.
+                            When I'm not immersed in my work, you can find me biking, hiking, lifting weights, or trying new restaurants around Vancouver.
                             <br /><br />
                         </p>
             </div>
