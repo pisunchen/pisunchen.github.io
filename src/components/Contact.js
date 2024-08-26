@@ -1,7 +1,7 @@
 import React from 'react'
-import mail from './images/mail.png'
-import linkedin from './images/linkedin.png'
-import github from './images/github.png'
+import mail from '../images/mail.png'
+import linkedin from '../images/linkedin.png'
+import github from '../images/github.png'
 
 function Contact() {
     return (

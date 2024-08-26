@@ -179,13 +179,13 @@ h1 {
     height: 3em;
     width: 100%;
     position: fixed;
-    padding: 2em 0em;
+    padding: 3em 0em;
 }
 
 .resume-link {
     border-color: black;
     border-radius: 4px;
-    padding: 0.1em;
+    padding: 0.3em;
     border-style: solid;
 }
 
@@ -508,10 +508,23 @@ a:hover .icon {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1500px) {
+    /* #bio {
+        width: 100%;
+    }
+    .container>div {
+        padding: 3em;
+    } */
+    .container {
+        grid-template-columns: 1fr;
+        padding: 8em 3em;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .container {
         grid-template-columns: 1fr;
-        padding: 8em 15em;
+        padding: 8em 5em;
     }
 
     .container-landing {

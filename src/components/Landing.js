@@ -1,5 +1,5 @@
 import React from 'react';
-import pisunPhoto from './images/profile.png';
+import pisunPhoto from '../images/profile.png';
 import RotatingWords from './RotatingWords';
 
 function Landing() {

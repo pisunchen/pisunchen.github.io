@@ -1,8 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import analytics from './images/analytics.png'; // Example images
-import fastTypingImg from './images/typing.png';
-import er_diagram from './images/er_diagram.png';
+import analytics from '../images/analytics.png'; // Example images
+import fastTypingImg from '../images/typing.png';
+import er_diagram from '../images/er_diagram.png';
 
 const Projects = () => {
     const projects = [
