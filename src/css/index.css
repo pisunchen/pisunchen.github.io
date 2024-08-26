@@ -281,6 +281,7 @@ img {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    padding-top: 3em;
 }
 
 .icon {
@@ -419,6 +420,7 @@ a:hover .icon {
     transition: transform 0.2s ease-in-out;
     max-width: 400px;
     flex-basis: calc(50% - 10px);
+    margin: 1em 2em
 }
 
 .container-projects {
