@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../index.css';
+import '../css/experience.css'
 import resume from '../resume/Pisun_Chen_Lai_Resume.pdf';
 
 function Navigation() {

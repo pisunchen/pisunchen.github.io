@@ -1,5 +1,5 @@
 import React from 'react';
-import '../experience.css'
+import '../css/experience.css'
 import truliooLogo from '../images/trulioo.jpg'
 import alidaLogo from '../images/alida.png'
 import AccordionItem from './AccordionItem'
