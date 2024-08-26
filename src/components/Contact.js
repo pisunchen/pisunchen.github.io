@@ -3,7 +3,7 @@ import mail from '../images/mail.png'
 import linkedin from '../images/linkedin.png'
 import github from '../images/github.png'
 
-function Contact() {
+const Contact = () => {
     return (
         <div className='contact-container'>
             <a href="mailto:pisun.c.l@gmail.com">

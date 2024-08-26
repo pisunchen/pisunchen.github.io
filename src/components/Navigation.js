@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../css/experience.css'
 import resume from '../resume/Pisun_Chen_Lai_Resume.pdf';
 
-function Navigation() {
+const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const nav = document.querySelector('.nav');

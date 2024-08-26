@@ -2,7 +2,7 @@ import React from 'react';
 import pisunPhoto from '../images/profile.png';
 import Contact from './Contact';
 
-function About() {
+const About = () => {
     return (
         <div className="container" id="about">
             <div id="bio">

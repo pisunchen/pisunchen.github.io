@@ -6,7 +6,7 @@ import Navigation from './Navigation';
 // import Contact from './Contact'
 import Projects from './Projects'
 
-function Page() {
+const Page = () => {
   return (
     <div>
       <Navigation></Navigation>
@@ -14,7 +14,7 @@ function Page() {
       <About></About>
       <Experience></Experience>
       <Projects></Projects>
-      {/* <Contact></Contact> */ }
+      {/* <Contact></Contact> */}
     </div >
   );
 }

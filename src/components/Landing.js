@@ -2,7 +2,7 @@ import React from 'react';
 import pisunPhoto from '../images/profile.png';
 import RotatingWords from './RotatingWords';
 
-function Landing() {
+const Landing = () => {
     return (
         <div className="container-landing" id="landing">
             {/* <div className="heading">
