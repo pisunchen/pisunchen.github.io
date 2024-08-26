@@ -16,9 +16,9 @@ const AccordionItem = ({ experience }) => {
         {isOpen && (
           <div className="accordion-content">
             <p className="location">{experience.location}</p>
-            <ul className="details">
+            <ul>
               {experience.details.map((detail, index) => (
-                <li key={index}>{detail}</li>
+                <li className="details" key={index}>{detail}</li>
               ))}
               <div className="tags">
                 {experience.tags.map((tag, index) => (
