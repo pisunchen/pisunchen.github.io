@@ -510,6 +510,13 @@ a:hover .icon {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1600px) {
+    .container-landing {
+        padding: 20em 15em;
+    }
+}
+
+
 @media only screen and (max-width: 1500px) {
     /* #bio {
         width: 100%;
