@@ -14,7 +14,7 @@ const Projects = () => {
             link: 'https://www.youtube.com/watch?v=ineS6dOIyhg'
         },
         {
-            title: 'Fast Fingers',
+            title: 'Fast Typers',
             description: 'Side Project | Typing Speed Test Web App',
             technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
             image: fastTypingImg,
