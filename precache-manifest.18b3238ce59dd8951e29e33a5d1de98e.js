@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "962ba471ff572e54f5d38c31d54d343b",
+    "revision": "bd28da473322eea047808441087feb00",
     "url": "/index.html"
   },
   {
-    "revision": "88931757900f42831c18",
+    "revision": "c1de9b33d6d28120a9af",
     "url": "/static/css/main.634678a2.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.8c9d6461.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "88931757900f42831c18",
-    "url": "/static/js/main.ab648899.chunk.js"
+    "revision": "c1de9b33d6d28120a9af",
+    "url": "/static/js/main.f6c0e666.chunk.js"
   },
   {
     "revision": "bfed812ea91b71ebf252",
     "url": "/static/js/runtime-main.8de15931.js"
   },
   {
-    "revision": "c60f5194ec0cec9e7c69ab5d63e848f6",
-    "url": "/static/media/Pisun_Chen_Lai_Resume.c60f5194.pdf"
+    "revision": "b1ba65fddf68f6b0750067f129bce845",
+    "url": "/static/media/Pisun_Chen_Lai_Resume.b1ba65fd.pdf"
   },
   {
     "revision": "db74e678abc0403009a6994a904583af",
