@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../css/experience.css'
-import resume from '../resume/Pisun_Chen_Lai_Resume.pdf';
+import resume from '../resume/pisunchen_resume.pdf';
 
 const Navigation = () => {
   useEffect(() => {
