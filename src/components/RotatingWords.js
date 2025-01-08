@@ -57,8 +57,8 @@ const RotatingWords = () => {
         <p>
             <span className="word w-2">A software developer</span>
             <span className="word w-3">A coffee enthusiast</span>
-            <span className="word w-4">A food connoisseur</span>
-            <span className="word w-5">An avid cyclist</span>
+            <span className="word w-4">A foodie</span>
+            <span className="word w-5">A hiker</span>
         </p>
     </div>
     );
