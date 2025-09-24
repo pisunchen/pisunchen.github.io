@@ -55,7 +55,7 @@ const Hero = () => {
         <div className="hero-illustration">
           <div className="profile-image-container">
             <img 
-              src="/assets/profile.png" 
+              src={`${process.env.PUBLIC_URL}/assets/profile.png`} 
               alt="Your Name - Software Developer" 
               className="profile-image"
             />

@@ -12,7 +12,7 @@ const Projects = () => {
       subtitle: 'AI-powered analytics platform for data visualization and business intelligence',
       description: 'A comprehensive analytics platform that leverages artificial intelligence to provide real-time data visualization and business intelligence insights. The platform processes large datasets and presents actionable insights through interactive dashboards.',
       techStack: ['JavaScript', 'React', 'Node.js', 'SQL', 'OpenAI API', 'WhisperAPI'],
-      images: ['/assets/analytics.png'],
+      images: [`${process.env.PUBLIC_URL}/assets/analytics.png`],
       link: 'https://www.youtube.com/watch?v=ineS6dOIyhg'
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
       subtitle: 'Warehouse storage database with 3NF design and rental management',
       description: 'Built a warehouse storage database with teammate collaboration, supporting space rentals and member identification. Designed the schema, wrote creation/management scripts, and normalized to 3NF to reduce data anomalies.',
       techStack: ['SQL', 'Java', 'Oracle DBMS', 'Swing'],
-      images: ['/assets/er_diagram.png'],
+      images: [`${process.env.PUBLIC_URL}/assets/er_diagram.png`],
       link: 'https://github.com/pisunchen/Storage-Company---Database-APP'
     },
     {
@@ -32,7 +32,7 @@ const Projects = () => {
       subtitle: 'Image recognition project using visual features and a simple classifier',
       description: 'Built an image recognition project that learns visual patterns from photos and categorizes different scene types. Created a compact visual vocabulary and trained a lightweight model to make clear, consistent predictions.',
       techStack: ['Python', 'scikit-learn', 'NumPy', 'Matplotlib'],
-      images: ['/assets/classifier.png'],
+      images: [`${process.env.PUBLIC_URL}/assets/classifier.png`],
       link: 'https://github.com/your-username/image-classifier'
     },
   ];

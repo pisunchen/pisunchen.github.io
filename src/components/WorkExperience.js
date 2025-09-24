@@ -5,7 +5,7 @@ const WorkExperience = () => {
   const workHistory = [
     {
       id: 1,
-      logo: '/assets/alida.png',
+      logo: `${process.env.PUBLIC_URL}/assets/alida.png`,
       company: 'Alida',
       role: 'Software Developer Co-op',
       location: 'Vancouver, BC',
@@ -22,7 +22,7 @@ const WorkExperience = () => {
     },
     {
       id: 2,
-      logo: '/assets/trulioo.jpg',
+      logo: `${process.env.PUBLIC_URL}/assets/trulioo.jpg`,
       company: 'Trulioo',
       role: 'Software Engineer in Test Co-op',
       location: 'Vancouver, BC',
