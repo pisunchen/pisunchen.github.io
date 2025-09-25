@@ -1,8 +1,25 @@
 import React, { useState } from 'react';
 import './Projects.css';
+import useScrollAnimation from '../hooks/useScrollAnimation';
+import Modal from './Modal';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState('');
+  const [modalAlt, setModalAlt] = useState('');
+  const sidebarRef = useScrollAnimation(0);
+  const contentRef = useScrollAnimation(200);
+
+  const openModal = (imageSrc, imageAlt) => {
+    setModalImage(imageSrc);
+    setModalAlt(imageAlt);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const projects = [
     {
@@ -38,10 +55,10 @@ const Projects = () => {
   ];
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="projects-container">
         {/* Left Sidebar */}
-        <div className="projects-sidebar">
+        <div className="projects-sidebar scroll-animate" ref={sidebarRef}>
           <h2 className="sidebar-title">Projects</h2>
           <div className="project-list">
             {projects.map((project) => (
@@ -57,7 +74,7 @@ const Projects = () => {
         </div>
 
         {/* Right Content */}
-        <div className="project-content">
+        <div className="project-content scroll-animate" ref={contentRef}>
           {projects[selectedProject] && (
             <div className="project-details">
               <h1 className="project-title">{projects[selectedProject].title}</h1>
@@ -83,34 +100,42 @@ const Projects = () => {
                   </a>
                 </div>
                 
-                <div className="project-images">
-                  {(() => {
-                    const firstImage = projects[selectedProject].images && projects[selectedProject].images[0];
-                    return (
-                      <div className="project-image-container">
-                        {firstImage ? (
-                          <img 
-                            src={firstImage} 
-                            alt={`${projects[selectedProject].title} screenshot`}
-                            className="project-image"
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                              e.target.nextSibling.style.display = 'flex';
-                            }}
-                          />
-                        ) : null}
-                        <div className="image-placeholder" style={{ display: firstImage ? 'none' : 'flex' }}>
-                          <span>Image</span>
-                        </div>
-                      </div>
-                    );
-                  })()}
-                </div>
+                    <div className="project-images">
+                      {(() => {
+                        const firstImage = projects[selectedProject].images && projects[selectedProject].images[0];
+                        return (
+                          <div className="project-image-container">
+                            {firstImage ? (
+                              <img
+                                src={firstImage}
+                                alt={`${projects[selectedProject].title} screenshot`}
+                                className="project-image"
+                                onClick={() => openModal(firstImage, `${projects[selectedProject].title} screenshot`)}
+                                onError={(e) => {
+                                  e.target.style.display = 'none';
+                                  e.target.nextSibling.style.display = 'flex';
+                                }}
+                              />
+                            ) : null}
+                            <div className="image-placeholder" style={{ display: firstImage ? 'none' : 'flex' }}>
+                              <span>Image</span>
+                            </div>
+                          </div>
+                        );
+                      })()}
+                    </div>
               </div>
             </div>
           )}
         </div>
       </div>
+      
+      <Modal 
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        imageSrc={modalImage}
+        imageAlt={modalAlt}
+      />
     </section>
   );
 };

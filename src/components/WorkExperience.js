@@ -1,7 +1,10 @@
 import React from 'react';
 import './WorkExperience.css';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const WorkExperience = () => {
+  const workRef = useScrollAnimation(0);
+  
   const workHistory = [
     {
       id: 1,
@@ -62,8 +65,8 @@ const WorkExperience = () => {
   };
 
   return (
-    <section className="work">
-      <div className="work-card">
+    <section className="work" id="work">
+      <div className="work-card scroll-animate" ref={workRef}>
         <div className="work-header">
           <h2 className="section-title">Work Experience</h2>
         </div>

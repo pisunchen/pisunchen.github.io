@@ -1,19 +1,25 @@
 import React from 'react';
 import './Hero.css';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Hero = () => {
+  const profileRef = useScrollAnimation(0);
+  const imageRef = useScrollAnimation(200);
+
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-content">
-        <div className="profile-section">
+        <div className="profile-section scroll-animate" ref={profileRef}>
           <div className="profile-header">
             <h1 className="name">Pisun Chen</h1>
             <h2 className="title">Software Developer & Computer Science and Business Graduate</h2>
           </div>
-          <div className="profile-details">
-              <p className="bio">
-                I'm a graduate from UBC passionate about leveraging technology to solve complex problems. My experience working at Alida and Trulioo have strengthened my technical skills and reinforced my passion for creating innovative and impactful solutions. When I'm not coding, you can find me hiking, cyling around Stanley Park, or exploring Vancouver's food scene.
-              </p>
+          <div className="profile-bio">
+            <p className="bio">
+              I'm a graduate from UBC passionate about leveraging technology to solve complex problems. My experience working at Alida and Trulioo have strengthened my technical skills and reinforced my passion for creating innovative and impactful solutions. When I'm not coding, you can find me hiking, cyling around Stanley Park, or exploring Vancouver's food scene.
+            </p>
+          </div>
+          <div className="profile-social">
             <div className="social-links" aria-label="Profile links">
               <a
                 href="https://linkedin.com/in/pisun"
@@ -52,7 +58,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-illustration">
+        <div className="hero-illustration scroll-animate" ref={imageRef}>
           <div className="profile-image-container">
             <img 
               src={`${process.env.PUBLIC_URL}/assets/profile.png`} 
